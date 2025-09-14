@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact InnovateTech Solutions">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Contact - InnovateTech Solutions</title>
+</head>
+
+<body>
+  <div class="page-layout">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="InnovateTech Solutions Logo">
+        <span>InnovateTech</span>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <a href="#contact-form" class="btn">Get Started</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Contact Info -->
+      <section class="contact-info">
+        <h1>Contact Us</h1>
+        <address>
+          InnovateTech Solutions<br>
+          123 Tech Avenue, Silicon City, CA 94000<br>
+          Phone: <a href="tel:+1234567890">+1 234 567 890</a><br>
+          Email: <a href="mailto:info@innovatetech.com">info@innovatetech.com</a>
+        </address>
+
+        <h2>Office Hours</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Open</th>
+              <th>Close</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>9:00 AM</td>
+              <td>6:00 PM</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>9:00 AM</td>
+              <td>6:00 PM</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>9:00 AM</td>
+              <td>6:00 PM</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>9:00 AM</td>
+              <td>6:00 PM</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>9:00 AM</td>
+              <td>6:00 PM</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>10:00 AM</td>
+              <td>4:00 PM</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>Closed</td>
+              <td>Closed</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form id="contact-form">
+          <!-- Personal Info -->
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="full-name">Full Name*</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="company">Company/Organization</label>
+            <input type="text" id="company" name="company">
+          </fieldset>
+
+          <!-- Inquiry Details -->
+          <fieldset>
+            <legend>Inquiry Details</legend>
+            <label for="service-interest">Service Interest</label>
+            <select id="service-interest" name="service-interest">
+              <option>Web Development</option>
+              <option>Mobile Apps</option>
+              <option>Consulting</option>
+              <option>Other</option>
+            </select>
+
+            <p>Project Timeline</p>
+            <label><input type="radio" name="timeline" value="ASAP"> ASAP</label>
+            <label><input type="radio" name="timeline" value="1-3 months"> 1-3 months</label>
+            <label><input type="radio" name="timeline" value="3-6 months"> 3-6 months</label>
+            <label><input type="radio" name="timeline" value="6+ months"> 6+ months</label>
+
+            <label for="budget">Budget Range</label>
+            <input type="range" id="budget" name="budget" min="1000" max="100000" step="1000">
+
+            <p>Project Type</p>
+            <label><input type="checkbox" name="project-type" value="New Website"> New Website</label>
+            <label><input type="checkbox" name="project-type" value="Redesign"> Redesign</label>
+            <label><input type="checkbox" name="project-type" value="Mobile App"> Mobile App</label>
+            <label><input type="checkbox" name="project-type" value="E-commerce"> E-commerce</label>
+            <label><input type="checkbox" name="project-type" value="Other"> Other</label>
+          </fieldset>
+
+          <!-- Message -->
+          <fieldset>
+            <legend>Message</legend>
+            <label for="description">Project Description*</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="file-upload">Upload Requirements</label>
+            <input type="file" id="file-upload" name="file-upload" accept=".pdf,.doc,.docx">
+
+            <p>Preferred Contact Method</p>
+            <label><input type="radio" name="contact-method" value="Email"> Email</label>
+            <label><input type="radio" name="contact-method" value="Phone"> Phone</label>
+            <label><input type="radio" name="contact-method" value="Video Call"> Video Call</label>
+          </fieldset>
+
+          <!-- Terms -->
+          <fieldset>
+            <label><input type="checkbox" required> I agree to the Terms of Service and Privacy Policy</label>
+            <label><input type="checkbox"> Subscribe to our newsletter</label>
+          </fieldset>
+
+          <button type="submit" class="btn">Submit</button>
+          <button type="reset" class="btn btn-secondary">Reset</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <address>
+        InnovateTech Solutions, 123 Tech Avenue, Silicon City, CA 94000<br>
+        Phone: <a href="tel:+1234567890">+1 234 567 890</a><br>
+        Email: <a href="mailto:info@innovatetech.com">info@innovatetech.com</a>
+      </address>
+      <div class="social">
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Facebook</a>
+      </div>
+      <p>&copy; 2025 InnovateTech Solutions. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

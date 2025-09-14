@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - InnovateTech</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+  <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <h1>InnovateTech</h1>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="active">🏠 Dashboard</li>
+          <li>📦 Products</li>
+          <li>📊 Analytics</li>
+          <li>🛒 Orders</li>
+          <li>⚙️ Settings</li>
+        </ul>
+      </nav>
+      <div class="sidebar-user">
+        <img src="images/user-avatar.png" alt="User Avatar">
+        <p>Admin User</p>
+      </div>
+    </aside>
+
+    <!-- Header -->
+    <header class="header">
+      <h2>Dashboard</h2>
+      <div class="header-right">
+        <input type="search" placeholder="Search...">
+        <div class="notifications">🔔</div>
+        <div class="user-dropdown">👤</div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Statistics Cards -->
+      <section class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">💰</div>
+          <h3>Revenue</h3>
+          <p>$25,000 <span class="stat-change">+10%</span></p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">👥</div>
+          <h3>Users</h3>
+          <p>1,200 <span class="stat-change">+5%</span></p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🛒</div>
+          <h3>Orders</h3>
+          <p>320 <span class="stat-change">+8%</span></p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📈</div>
+          <h3>Growth</h3>
+          <p>12% <span class="stat-change">+2%</span></p>
+        </div>
+      </section>
+
+      <!-- Data Tables -->
+      <section class="tables">
+        <h2>Recent Orders</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Product</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1001</td>
+                <td>Alice</td>
+                <td>Website Design</td>
+                <td>$2000</td>
+                <td><span class="badge completed">Completed</span></td>
+                <td>2025-09-10</td>
+              </tr>
+              <tr>
+                <td>#1002</td>
+                <td>Bob</td>
+                <td>Mobile App</td>
+                <td>$5000</td>
+                <td><span class="badge pending">Pending</span></td>
+                <td>2025-09-11</td>
+              </tr>
+              <tr>
+                <td>#1003</td>
+                <td>Carol</td>
+                <td>Cloud Setup</td>
+                <td>$1500</td>
+                <td><span class="badge completed">Completed</span></td>
+                <td>2025-09-12</td>
+              </tr>
+              <tr>
+                <td>#1004</td>
+                <td>David</td>
+                <td>E-commerce Site</td>
+                <td>$3000</td>
+                <td><span class="badge canceled">Canceled</span></td>
+                <td>2025-09-12</td>
+              </tr>
+              <tr>
+                <td>#1005</td>
+                <td>Eve</td>
+                <td>Mobile App</td>
+                <td>$4500</td>
+                <td><span class="badge pending">Pending</span></td>
+                <td>2025-09-13</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>User Analytics</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>User Type</th>
+                <th>Count</th>
+                <th>Percentage</th>
+                <th>Trend</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Admin</td>
+                <td>5</td>
+                <td>2%</td>
+                <td>📈</td>
+              </tr>
+              <tr>
+                <td>Regular</td>
+                <td>150</td>
+                <td>75%</td>
+                <td>📈</td>
+              </tr>
+              <tr>
+                <td>Guest</td>
+                <td>45</td>
+                <td>23%</td>
+                <td>📉</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Quick Actions Form -->
+      <section class="quick-actions">
+        <h2>Add New Product</h2>
+        <form>
+          <fieldset>
+            <legend>Product Information</legend>
+            <label>Product Name*</label>
+            <input type="text" required>
+            <label>Category</label>
+            <select>
+              <option>Web Development</option>
+              <option>Mobile Apps</option>
+              <option>Cloud Services</option>
+            </select>
+            <label>Price ($)</label>
+            <input type="number" min="0">
+            <label>SKU/Code</label>
+            <input type="text" pattern="[A-Za-z0-9]+">
+          </fieldset>
+
+          <fieldset>
+            <legend>Inventory</legend>
+            <label>Stock Quantity</label>
+            <input type="number" min="0">
+            <label>Reorder Level</label>
+            <input type="number" min="0">
+            <label>Supplier</label>
+            <select>
+              <option>Supplier A</option>
+              <option>Supplier B</option>
+              <option>Supplier C</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Media</legend>
+            <label>Product Image</label>
+            <input type="file" accept="image/*">
+            <label><input type="checkbox"> Featured Product</label>
+            <p>Status:</p>
+            <label><input type="radio" name="status" value="active"> Active</label>
+            <label><input type="radio" name="status" value="inactive"> Inactive</label>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="btn">Save</button>
+            <button class="btn btn-secondary">Save & Continue</button>
+            <button class="btn btn-secondary">Cancel</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
